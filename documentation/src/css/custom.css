@@ -1,0 +1,270 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary-dark: rgb(33, 175, 144);
+    --ifm-color-primary-darker: rgb(31, 165, 136);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(70, 203, 174);
+    --ifm-color-primary-lighter: rgb(102, 212, 189);
+    --ifm-color-primary-lightest: rgb(146, 224, 208);
+    --ifm-code-font-size: 95%;
+    --ifm-navbar-background-color: var(--color-purple);
+    --ifm-navbar-height: 64px;
+    --ifm-menu-color-background-active: rgba(255, 255, 255, 0.05);
+    --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.05);
+    --color-purple: #331049;
+    --color-turquoise: #0ccee9;
+    --color-blue: #0b82f0;
+    --color-text-white: white;
+    --color-text-black: #1c1e21;
+    --color-bg-white: white;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6.4px;
+    overflow: auto;
+    box-shadow: var(--ifm-alert-shadow);
+}
+
+.window {
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    background: #292d3e;
+    height: 32px;
+}
+
+.window .control {
+    width: 16px;
+    height: 16px;
+    border-radius: 999px;
+}
+
+.window .control:nth-child(2),
+.control:nth-child(3) {
+    margin-left: 8px;
+}
+
+.window .control.red {
+    background: rgb(230, 54, 54);
+}
+
+.window .control.orange {
+    background: rgb(217, 119, 6);
+}
+
+.window .control.green {
+    background: rgb(5, 150, 105);
+}
+
+@media screen and (max-width: 650px) {
+    .window {
+        height: 16px;
+    }
+
+    .window .control {
+        width: 8px;
+        height: 8px;
+    }
+
+    .window .control:nth-child(2),
+    .control:nth-child(3) {
+        margin-left: 4px;
+    }
+}
+
+.docusaurus-highlight-code-line {
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+
+.required {
+    font-size: 13px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #fa5035;
+    color: #fa5035;
+    border-width: 1px;
+    letter-spacing: 0.02rem;
+    margin-right: 0;
+    padding: 0 6px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.required-block {
+    display: flex;
+    align-items: center;
+}
+
+.footer__links {
+    margin-bottom: 20px;
+}
+
+.footer__col:first-child {
+    flex: 2;
+}
+
+.footer__col:first-child .footer__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer__col:first-child .footer__items .footer__item {
+    flex-basis: 50%;
+}
+
+@media screen and (max-width: 966px) {
+    .footer__link-item {
+        font-size: 14px;
+    }
+}
+
+.language-js {
+    font-size: 9px;
+}
+
+.required {
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #fa5035;
+    color: #fa5035;
+    border-width: 1px;
+    letter-spacing: 0.02rem;
+    margin-right: 0;
+    padding: 0 6px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Common */
+.row--justify--center {
+    justify-content: center;
+}
+
+/* Header classes */
+.navbar__brand {
+    margin-left: 8px;
+}
+
+.navbar__link {
+    color: var(--color-text-white);
+    font-weight: 600;
+}
+
+.navbar__toggle {
+    color: var(--color-text-white);
+}
+
+.navbar-sidebar__brand {
+    justify-content: space-between;
+}
+
+.navbar-sidebar__items .menu__list .menu__link {
+    color: var(--color-text-white);
+}
+
+.navbar-sidebar__items .menu__list .menu__link.menu__link--sublist::after {
+    filter: invert(100%) sepia(94%) saturate(17%) hue-rotate(223deg)
+        brightness(104%) contrast(98%);
+}
+
+.navbar-sidebar__back {
+    color: var(--color-text-white);
+}
+
+.header-first-nav-item {
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 996px) {
+    .header-first-nav-item {
+        margin-left: 0px;
+    }
+}
+
+.header-last-nav-item {
+    margin-right: 30px;
+}
+
+.header-icon-link {
+    transition: 0.5s;
+}
+
+.header-icon-link:hover {
+    filter: brightness(2);
+}
+
+.header-icon-link::before {
+    content: "";
+    display: flex;
+    height: 24px;
+    width: 24px;
+}
+
+.header-github-link::before {
+    background: url("/icons/github.svg");
+    background-size: contain;
+}
+
+.header-discord-link::before {
+    background: url("/icons/discord.svg");
+    background-size: contain;
+}
+
+.header-twitter-link::before {
+    background: url("/icons/twitter.svg");
+    background-size: contain;
+}
+
+/* Code Renderer Styles */
+
+.pre {
+    text-align: left;
+    margin: 1em 0;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+.pre .token-line {
+    line-height: 1.3em;
+    height: 1.3em;
+}
+
+.code-line {
+    display: table-row;
+}
+
+.code-line-no {
+    display: table-cell;
+    text-align: right;
+    padding-right: 1em;
+    user-select: none;
+    opacity: 0.5;
+}
+
+.code-line-content {
+    display: table-cell;
+}
+
+
+  
+[data-theme="light"] .shiki.nord {
+    display: none;
+}
+
+[data-theme="dark"] .shiki.min-light {
+    display: none;
+}

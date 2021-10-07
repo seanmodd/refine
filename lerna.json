@@ -1,0 +1,11 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "registry": "https://registry.npmjs.org/",
+  "npmClient": "npm",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.0.0"
+}
