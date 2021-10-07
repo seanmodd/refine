@@ -15,6 +15,7 @@
     "@types/node": "^12.20.10",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
+    "babel-plugin-import": "^1.13.3",
     "craco-less": "^1.17.1",
     "dayjs": "1.10.5",
     "google-map-react": "^2.1.10",
